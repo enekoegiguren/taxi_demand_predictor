@@ -6,6 +6,7 @@ DATA_DIR = PARENT_DIR / 'data'
 RAW_DATA_DIR = PARENT_DIR / 'data' / 'raw'
 TRANSFORMED_DATA_DIR = PARENT_DIR / 'data' / 'transformed'
 DATA_CACHE_DIR = PARENT_DIR / 'data' / 'cache'
+IMG = PARENT_DIR / 'img' 
 
 MODELS_DIR = PARENT_DIR / 'models'
 
@@ -23,3 +24,6 @@ if not Path(MODELS_DIR).exists():
 
 if not Path(DATA_CACHE_DIR).exists():
     os.mkdir(DATA_CACHE_DIR)
+    
+if not Path(IMG).exists():
+    os.mkdir(IMG)
